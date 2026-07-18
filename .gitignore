@@ -1,0 +1,15 @@
+# Terraform state (can contain sensitive data)
+*.tfstate
+*.tfstate.backup
+*.tfstate.*
+
+# Terraform working files
+.terraform/
+.terraform.lock.hcl
+
+# SSH keys - NEVER commit private keys
+my-ec2-key
+*.pem
+
+# Terraform variable files that might have secrets
+*.tfvars
